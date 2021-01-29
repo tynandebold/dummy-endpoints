@@ -30,6 +30,11 @@ app.get("/header-nav", (req, res) => {
       { page: "Konti", iconName: "Indstillinger" },
       { page: "Admin", iconName: "Brugernavn" },
     ],
+    footerMobileData: [
+      "Kundeservice",
+      "Kontakt afdelinger",
+      "Om Lemvigh-Müller",
+    ],
   });
 });
 
