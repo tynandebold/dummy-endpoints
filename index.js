@@ -14,6 +14,25 @@ app.use((req, res, next) => {
 
 app.get("/", (req, res) => res.send("Up and running."));
 
+app.get("/header-nav", (req, res) => {
+  res.send({
+    productsData: ["VVS", "El", "Stål", "Energi & Klima", "Værktøj"],
+    servicesData: ["Service", "Rådgivning"],
+    loggedInData: [
+      { page: "Indbakke", iconName: "Brev" },
+      { page: "Godkend", iconName: "Kurv" },
+      { page: "Ordre", iconName: "Download" },
+      { page: "Returnering", iconName: "LinkPil" },
+      { page: "Favoritlister", iconName: "Favorit" },
+      { page: "Data", iconName: "Download" },
+      { page: "Fordele", iconName: "Filtre" },
+      { page: "Statestik", iconName: "Home" },
+      { page: "Konti", iconName: "Indstillinger" },
+      { page: "Admin", iconName: "Brugernavn" },
+    ],
+  });
+});
+
 app.get("/hours", (req, res) => {
   res.send({
     Monday: "8-16:30",
