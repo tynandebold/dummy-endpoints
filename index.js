@@ -1,5 +1,5 @@
 const express = require("express");
-const { lmData } = require("./data");
+const { lmCategoryData, lmNavFooterData } = require("./data");
 
 const app = express();
 const port = process.env.PORT || 9001;
@@ -16,8 +16,12 @@ app.use((req, res, next) => {
 
 app.get("/", (req, res) => res.send("Up and running."));
 
+app.get("/categories", (req, res) => {
+  res.send(lmCategoryData);
+});
+
 app.get("/header-nav-footer", (req, res) => {
-  res.send(lmData);
+  res.send(lmNavFooterData);
 });
 
 app.get("/hours", (req, res) => {

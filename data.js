@@ -1,4 +1,4 @@
-module.exports.lmData = {
+module.exports.lmNavFooterData = {
   navigation: {
     productsData: ["VVS", "El", "Stål", "Energi & Klima", "Værktøj"],
     servicesData: ["Service", "Rådgivning"],
@@ -197,4 +197,70 @@ module.exports.lmData = {
     },
     bottomText: "© 2021 Lemvigh-Müller - Alle rettigheder forbeholdes",
   },
+};
+
+module.exports.lmCategoryData = {
+  categories: [
+    {
+      category: "Opmaerkning",
+      url: "/opmaerkning/",
+      imageUrl:
+        "https://assets.cdnlemu.dk/api/sitecore/asset/get?id=043d-80c3-43e8-8f20-65eea1aefca0&size=DrillDownCatalogThumbnail",
+      links: [
+        {
+          name: "Rittal Spelsberg Hager",
+          type: 0,
+          url: "/Rittal Spelsberg Hager/",
+        },
+        {
+          name: "Indsats",
+          type: 0,
+          url: "/Indsats/",
+        },
+        {
+          name: "Rammer",
+          type: 0,
+          url: "/Rammer/",
+        },
+      ],
+    },
+    {
+      category: "Faerdigmonterede gruppetavler",
+      url: "/faerdigmonterede-gruppetavler/",
+      imageUrl:
+        "https://assets.cdnlemu.dk/api/sitecore/asset/get?id=e19f-0bc8-479f-8c01-7f44fb6f6394&size=DrillDownCatalogThumbnail",
+      links: [
+        {
+          name: "Hager boligtavler ( Hager afdækning )",
+          type: 0,
+          url: "/Hager boligtavler ( Hager afdækning )/",
+        },
+        {
+          name: "Unite boligtavler ( LK afdækning )",
+          type: 0,
+          url: "/Unite boligtavler ( LK afdækning )/",
+        },
+      ],
+    },
+    {
+      category: "Tavlefrontstik",
+      url: "/tavlefrontstik/",
+      imageUrl:
+        "https://assets.cdnlemu.dk/api/sitecore/asset/get?id=42e0-f804-44d7-9aca-8f3adcb6ec87&size=DrillDownCatalogThumbnail",
+      links: [
+        {
+          name: "PVC rør",
+          type: 0,
+          url: "/pvc-ror/",
+        },
+      ],
+    },
+    {
+      category: "Kasse-modulsystem",
+      url: "/kasse-modulsystem/",
+      imageUrl:
+        "https://assets.cdnlemu.dk/api/sitecore/asset/get?id=6c8f-7b9f-4e4a-bc6f-c0b613d69cf2&size=DrillDownCatalogThumbnail",
+      links: [],
+    },
+  ],
 };
