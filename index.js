@@ -1,5 +1,9 @@
 const express = require("express");
-const { lmCategoryData, lmNavFooterData } = require("./data");
+const {
+  lmCategoryData,
+  lmNavFooterData,
+  lmNavFooterDataFull,
+} = require("./data");
 
 const app = express();
 const port = process.env.PORT || 9001;
@@ -22,6 +26,10 @@ app.get("/categories", (req, res) => {
 
 app.get("/header-nav-footer", (req, res) => {
   res.send(lmNavFooterData);
+});
+
+app.get("/header-nav-footer-full", (req, res) => {
+  res.send(lmNavFooterDataFull);
 });
 
 app.get("/hours", (req, res) => {
