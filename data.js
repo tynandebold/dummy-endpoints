@@ -279,8 +279,20 @@ module.exports.lmNavFooterDataFull = {
               {
                 id: "122559",
                 name: "Gevind fittings",
-                subCategories: [],
-                url: "/api/content/1088/category/122559",
+                subCategories: [
+                  {
+                    id: "122567",
+                    name: "Sub sub fittings",
+                    subCategories: [],
+                    url: "/api/content/1088/category/122567",
+                  },
+                  {
+                    id: "122568",
+                    name: "Sub sub fittings #2",
+                    url: "/api/content/1088/category/122568",
+                  },
+                ],
+                url: "/api/content/1088/category/122567",
               },
               {
                 id: "122560",
@@ -632,7 +644,14 @@ module.exports.lmNavFooterDataFull = {
               {
                 id: "103974",
                 name: "Tavler og kasser",
-                subCategories: [],
+                subCategories: [
+                  {
+                    id: "192567",
+                    name: "Hvid kasser",
+                    subCategories: [],
+                    url: "/api/content/1088/category/192567",
+                  },
+                ],
                 url: "/api/content/1088/category/103974",
               },
               {
