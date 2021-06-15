@@ -1,4 +1,5 @@
 const express = require("express");
+const faker = require("faker");
 const {
   lmCategoryData,
   lmNavFooterData,
@@ -19,6 +20,28 @@ app.use((req, res, next) => {
 });
 
 app.get("/", (req, res) => res.send("Up and running."));
+
+app.get("/order-overview", (req, res) => {
+  let n = 0;
+  const tableData = [];
+
+  while (n < 20) {
+    n++;
+
+    tableData.push({
+      date: faker.date.past(),
+      orderNumber: faker.finance.routingNumber(),
+      reference: faker.finance.routingNumber(),
+      account: faker.datatype.number(),
+      createdBy: faker.name.findName(),
+      address: `${faker.company.companyName()} ${faker.address.streetAddress()}, ${faker.address.zipCode()}`,
+      totalPrice: faker.finance.amount(),
+      status: faker.hacker.ingverb(),
+    });
+  }
+
+  res.send(tableData);
+});
 
 app.get("/categories", (req, res) => {
   res.send(lmCategoryData);
